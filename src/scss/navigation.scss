@@ -1,0 +1,38 @@
+/*menu begin*/
+
+.main__nav {
+  display: flex;
+  overflow: auto;
+  padding: 40px;
+}
+
+.main__nav::-webkit-scrollbar {
+  display: none;
+}
+
+.main__nav_text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main__nav a {
+  color: $grey;
+  text-align: start;
+  /* background-color: $white; */
+  border-radius: 6px;
+  padding: 8px 9.3px 8px 16.54px;
+  border-bottom: 0px;
+  margin: 0px;
+  /* outline: 2px solid $turq; */
+  transition: 0.5s;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.main__nav a:active,
+.main__nav a:focus {
+  outline: 2px solid $turq;
+  background-color: $white;
+}
+
+/*menu end*/

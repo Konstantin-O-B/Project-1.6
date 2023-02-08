@@ -1,0 +1,101 @@
+/* media begin*/
+
+@media (max-width: 400px) {
+  .swiper {
+    width: 300px;
+  }
+  .swiper-wrapper {
+    flex-wrap: nowrap;
+  }
+  .show-more-btn {
+    display: none;
+  }
+
+  .gradient {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1118px) {
+  .header__menu_container_button_hidden,
+  .header__hr_second {
+    display: flex;
+  }
+
+  .header__menu_container_burger-logo-hr :nth-child(2) {
+    order: 2;
+  }
+
+  .header__hr {
+    margin-right: 20.73px;
+  }
+
+  .main__p_img_container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__img img {
+    min-width: 360px;
+    min-height: 208px;
+    border-radius: 2%;
+    margin-right: 25px;
+  }
+
+  .header__container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .text {
+    max-height: 35px;
+  }
+
+  .main__p_text {
+    min-width: 312px;
+    max-width: 1000px;
+
+    margin-left: 24px;
+    margin-right: 48px;
+  }
+
+  .main__article__text {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1119px) {
+  header {
+    display: none;
+  }
+
+  .main__article__text {
+    margin-left: 40px;
+  }
+
+  .main__article_button_container {
+    display: flex;
+    margin-right: 32px;
+  }
+
+  .main__p_img_container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__img img {
+    min-width: 531.35px;
+    min-height: 307px;
+    border-radius: 2%;
+    margin-right: 28.65px;
+  }
+
+  .main__nav {
+    flex-wrap: wrap;
+  }
+
+  /* .swiper {
+    width: 1100px;
+  } */
+}
+/*media end*/

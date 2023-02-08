@@ -1,0 +1,79 @@
+#menuBurg span:nth-child(1) {
+  top: 50%;
+  width: 18px;
+  opacity: 1;
+}
+
+#menuBurg span:nth-child(2) {
+  top: 70%;
+  width: 10px;
+  opacity: 1;
+}
+
+#menuBurg span:nth-child(3) {
+  top: 90%;
+  width: 14px;
+  opacity: 1;
+}
+
+#menuBurg.menu-burger-open span:nth-child(1) {
+  width: 27px;
+  transform: translateX(-4.5px) translateY(8px) rotate(45deg);
+}
+
+#menuBurg.menu-burger-open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#menuBurg.menu-burger-open span:nth-child(3) {
+  width: 27px;
+  transform: translateX(-4.5px) translateY(-8px) rotate(-45deg);
+}
+
+#call {
+  background-image: url(../img/icon/call.svg);
+}
+
+#chat {
+  background-image: url(../img/icon/chat.svg);
+}
+
+#profile {
+  background-image: url(../img/icon/profile.svg);
+}
+
+#repair {
+  background-image: url(../img/icon/repair.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#checkstatus {
+  background-image: url(../img/icon/checkstatus.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#search {
+  background-image: url(../img/icon/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.show-more-btn {
+  appearance: none;
+  border: none;
+  font-family: 'TT Lakes';
+  font-weight: 600;
+  width: 126px;
+  height: 24px;
+  margin-top: 24px;
+  margin-bottom: 34px;
+  margin-left: 32px;
+  background-image: url(../img/arr/icon.svg);
+  background-repeat: no-repeat;
+  background-position: 0% 55%;
+  background-color: inherit;
+  transition: 0.5s;
+}
