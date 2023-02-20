@@ -1,3 +1,63 @@
+
+
+.swiper .hide,
+.swiper_second .hide {
+  display: none;
+}
+.load-more__ckb {
+  display: none;
+}
+
+
+.read-more-checker {
+  /*спрятал чекер с галочкой*/
+  opacity: 0;
+  position: absolute;
+  transition: 0.3s;
+}
+
+.swiper__load-more .view-all, 
+.swiper-second__load-more .view-all {
+  background-image: url(../img/arr/icon.svg);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  
+}
+
+.swiper__load-more .hide, 
+.swiper-second__load-more .hide {
+  background-image: url(../img/arr/icon-rev.svg);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  
+}
+
+
+
+.swiper #swiperLoadMore:checked ~ .swiper__load-more .view-all,
+.swiper_second #swiperSecondLoadMore:checked ~ .swiper-second__load-more .view-all {
+  display: none;
+}
+.swiper #swiperLoadMore:checked ~ .swiper__load-more .hide,
+.swiper_second #swiperSecondLoadMore:checked ~ .swiper-second__load-more .hide {
+  display: block;
+}
+
+.read-more-checker:checked ~ .text {
+  /*применяется для всех элементов с классом text, после перевода в статус checked элемента с классом read-more-checker*/
+  max-height: none;
+  transition: 0.3s;
+}
+
+.read-more-button {
+  margin-top: 16px;
+  margin-left: 24px;
+  
+  background-image: url(../img/arr/icon.svg);
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+}
+
 #menuBurg span:nth-child(1) {
   top: 50%;
   width: 18px;
@@ -76,4 +136,77 @@
   background-position: 0% 55%;
   background-color: inherit;
   transition: 0.5s;
+}
+
+.slide__btn_small {
+  
+  width: 119px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: $pinkBtn;
+  
+}
+
+.slide__btn_small:after  {
+  content: 'Заказать';
+  color: $white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  position: relative;
+  top: 4px;
+  left: 12px;
+}
+
+
+
+
+.slide_third a{
+  width: 119px;
+  height: 32px;
+  background-color: $pinkBtn;
+  border-radius: 16px;
+  /* position: absolute;
+  transform: translateX(105px) translateY(150px); */
+}
+.slide_third a .arrow{
+  width: 6px;
+  height: 6px;
+  margin-right: 16px;
+  border-top: 3px solid $white;
+  border-right: 3px solid $white;
+  transform: rotate(45deg);
+}
+
+.popup__send {
+  display: flex;
+  width: 136px;
+  height: 32px;
+  margin: 19px 32px;
+  border-radius: 16px;
+  background-color: $pinkBtn;
+  justify-content: space-between;
+
+}
+
+.popup__send:after  {
+  content: 'Отправить';
+  color: $white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.popup__send .arrow{
+  order: 2;
+  width: 8px;
+  height: 8px;
+  margin-right: 16px;
+  margin-top: 12px;
+  border-top: 3px solid $white;
+  border-right: 3px solid $white;
+  transform: rotate(45deg);
+  
 }

@@ -3,7 +3,8 @@
 .header__menu_drop-menu {
   display: block;
   position: absolute;
-  width: 320px;
+  min-width: 320px;
+  max-width: 360px;
   top: 0%;
   left: 0%;
   transform: translateY(88px);
@@ -11,14 +12,15 @@
   box-shadow: 16px 0px 24px -13px rgba(34, 60, 80, 0.18);
   z-index: 2;
   opacity: 0;
-  transform: scaleY(0);
+  transform: scaleY(0) scaleX(0);
   transform-origin: 0 0;
   transition: 0.5s ease-in-out;
 }
 
 .visibility {
   opacity: 1;
-  transform: scaleY(1);
+  transform: scaleY(1) scaleX(1);
+  height: 100vh;
 }
 
 .menu-burger {
@@ -27,12 +29,12 @@
 
 .drop-menu__list {
   list-style-type: none;
-  margin-top: 120px;
+  
 }
 
 .drop-menu__list > li {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .drop-menu__list a {
@@ -41,26 +43,47 @@
   padding: 5px;
 }
 
-.drop-menu__list a:focus {
-  /* background: url(/highlight/highlight.svg) no-repeat; */ /*нужно поправить!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-  background-position: left;
-  opacity: 0.5;
+
+
+.active::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -16px;
+  width: 4px;
+  height: 32px;
+  background-color: $turq;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  transition: background-color .3s;
 }
+
 
 .drop-menu__list a:hover {
   color: $grey;
 }
 
 .drop-menu__search-btn {
-  position: absolute;
-  transform: translateX(250px) translateY(23px);
+  margin-right: 29px;
 }
+
+.container_logo_search {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  margin-bottom: 38px;
+}
+
+.container_logo_search .header__menu_logo {
+margin-left: 80px;
+}
+
 /*Footer drop menu*/
 
 .drop-menu__footer {
   display: block;
   margin-left: 24px;
-  margin-top: 268px;
+  margin-top: 32px;
 }
 
 .drop-menu__footer a {
@@ -75,7 +98,7 @@
 
 .footer__lang-box {
   display: flex;
-  margin-top: 40px;
+  margin: 8px 0 32px 0;
   font-size: 16px;
 }
 .footer__lang-box a {

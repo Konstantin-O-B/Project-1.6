@@ -1,0 +1,18 @@
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    margin-top: 16px;
+}
+.footer__container p{
+    color: $grey; 
+    text-align: center;
+    font-size: 14px;
+    flex-basis: 40%;
+}
+
+footer{
+    border-top: 1px solid $line;
+    background-color: $bodyWhite;
+    
+}
